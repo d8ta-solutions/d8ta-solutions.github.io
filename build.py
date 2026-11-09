@@ -5,7 +5,7 @@ import html, os
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 EMAIL = "d8ta.solutions.ql@gmail.com"
-LINKEDIN = ""  # set to the profile URL to show the LinkedIn link
+LINKEDIN = "https://www.linkedin.com/in/kevin-quispe-8ab27b44a"
 TIKTOK = "https://www.tiktok.com/@d8ta.solutions"
 
 PROJECTS = [
