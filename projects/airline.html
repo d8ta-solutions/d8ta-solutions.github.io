@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airline Passenger Experience · d8ta.solutions</title>
+<meta name="description" content="Which parts of the journey drive satisfaction, how it differs by cabin and trip type, and the cost of delays.">
+<meta property="og:title" content="Airline Passenger Experience · d8ta.solutions">
+<meta property="og:description" content="Which parts of the journey drive satisfaction, how it differs by cabin and trip type, and the cost of delays.">
+<meta property="og:image" content="https://d8ta-solutions.github.io/assets/img/og.png">
+<link rel="icon" href="../assets/img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="../"><img src="../assets/img/logo-mark.png" alt=""><span class="bname">d8ta<span>.solutions</span></span></a>
+    <nav class="links">
+      <a href="../#about">About</a>
+      <a href="../#projects">Projects</a>
+      <a href="../#stories">Data stories</a>
+      <a class="btn btn-sm" href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="detail">
+  <div class="wrap">
+    <a class="back" href="../#projects">← All projects</a>
+    <div class="detail-head">
+      <div class="kicker">Customer experience survey</div>
+      <h1>Airline Passenger Experience</h1>
+      <p class="sub">Which parts of the journey drive satisfaction, how it differs by cabin and trip type, and the cost of delays.</p>
+      <p class="data-line">Airline satisfaction survey · 129,880 passengers · 14 touchpoints</p>
+    </div>
+    <div class="detail-shot"><img id="main-shot" src="../assets/img/dash-airline-1.png" alt="Airline Passenger Experience dashboard"></div>
+    <div class="gallery"><button class="thumb-btn active" data-src="../assets/img/dash-airline-1.png"><img src="../assets/img/dash-airline-1.png" alt="" loading="lazy"><span>Experience Overview</span></button><button class="thumb-btn" data-src="../assets/img/dash-airline-2.png"><img src="../assets/img/dash-airline-2.png" alt="" loading="lazy"><span>Service Quality</span></button><button class="thumb-btn" data-src="../assets/img/dash-airline-3.png"><img src="../assets/img/dash-airline-3.png" alt="" loading="lazy"><span>Operations &amp; Punctuality</span></button></div>
+    <script>document.querySelectorAll(".thumb-btn").forEach(b=>b.addEventListener("click",()=>{document.getElementById("main-shot").src=b.dataset.src;document.querySelectorAll(".thumb-btn").forEach(x=>x.classList.toggle("active",x===b));}));</script>
+    <div class="detail-grid">
+      <div>
+        <div class="block"><h2>Key findings</h2><ul class="findings"><li>Overall satisfaction is 43.4%: 69.4% in Business vs. 18.8% in Economy.</li><li>Online boarding is the strongest driver: 87% of passengers who score it 5 are satisfied vs. 13% for scores 1–3.</li><li>Inflight Wi-Fi is the lowest-rated touchpoint (2.81 / 5).</li><li>On-time arrivals: 45.7% satisfied vs. 35.8% when late.</li></ul></div>
+        <div class="block"><h2>Report pages</h2><ul class="pages"><li><b>Experience Overview</b><span>Satisfaction rate, service rating, loyalty, trip mix and punctuality; satisfaction by age, cabin, segment, customer type and distance.</span></li><li><b>Service Quality</b><span>Average rating per touchpoint, the top 7 drivers that separate satisfied from dissatisfied passengers, and satisfaction by online boarding score.</span></li><li><b>Operations &amp; Punctuality</b><span>Satisfaction by arrival delay and Wi-Fi score, plus a segment scorecard.</span></li></ul></div>
+        
+      </div>
+      <aside>
+        <div class="block side"><h2>How it's built</h2><p>Passengers table plus a Service Ratings table unpivoted in Power Query (one row per passenger and touchpoint), so every touchpoint is compared on one axis. Train/test files combined; ratings of 0 treated as not applicable. 36 DAX measures.</p><div class="tools"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Survey analytics</span><span>Driver analysis</span></div></div>
+        <div class="block side"><h2>Want one like this?</h2><p>I can build the same kind of report on your own data.</p><a class="btn" href="#contact">Get in touch</a></div>
+      </aside>
+    </div>
+    <a class="next" href="restaurant.html"><span>Next project</span><b>Restaurant Ratings Analysis →</b></a>
+  </div>
+</main>
+<section class="contact" id="contact">
+  <div class="wrap contact-row">
+    <div>
+      <h2>Have data you're not using?</h2>
+      <p>Tell me about your business and the files you have. I reply within 24 hours with an honest view of what a dashboard could show you.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn" href="mailto:d8ta.solutions.ql@gmail.com?subject=Dashboard%20project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> d8ta.solutions.ql@gmail.com</a>
+      <div class="social"><a href="https://www.tiktok.com/@d8ta.solutions" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+  </div>
+</section>
+<footer class="foot"><div class="wrap foot-row"><span>© 2026 d8ta.solutions · Lima, Peru · Remote</span><span>Portfolio projects use public datasets.</span></div></footer>
+</body>
+</html>

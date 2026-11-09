@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telecom Customer Churn · d8ta.solutions</title>
+<meta name="description" content="Who is leaving, how much monthly revenue walks out with them, and which services and contract types keep customers.">
+<meta property="og:title" content="Telecom Customer Churn · d8ta.solutions">
+<meta property="og:description" content="Who is leaving, how much monthly revenue walks out with them, and which services and contract types keep customers.">
+<meta property="og:image" content="https://d8ta-solutions.github.io/assets/img/og.png">
+<link rel="icon" href="../assets/img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="../"><img src="../assets/img/logo-mark.png" alt=""><span class="bname">d8ta<span>.solutions</span></span></a>
+    <nav class="links">
+      <a href="../#about">About</a>
+      <a href="../#projects">Projects</a>
+      <a href="../#stories">Data stories</a>
+      <a class="btn btn-sm" href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="detail">
+  <div class="wrap">
+    <a class="back" href="../#projects">← All projects</a>
+    <div class="detail-head">
+      <div class="kicker">Subscription business</div>
+      <h1>Telecom Customer Churn</h1>
+      <p class="sub">Who is leaving, how much monthly revenue walks out with them, and which services and contract types keep customers.</p>
+      <p class="data-line">IBM Telco Customer Churn · 7,043 customers</p>
+    </div>
+    <div class="detail-shot"><img id="main-shot" src="../assets/img/dash-telco-1.png" alt="Telecom Customer Churn dashboard"></div>
+    <div class="gallery"><button class="thumb-btn active" data-src="../assets/img/dash-telco-1.png"><img src="../assets/img/dash-telco-1.png" alt="" loading="lazy"><span>Churn Overview</span></button><button class="thumb-btn" data-src="../assets/img/dash-telco-2.png"><img src="../assets/img/dash-telco-2.png" alt="" loading="lazy"><span>Services &amp; Pricing</span></button><button class="thumb-btn" data-src="../assets/img/dash-telco-3.png"><img src="../assets/img/dash-telco-3.png" alt="" loading="lazy"><span>Revenue at Risk</span></button></div>
+    <script>document.querySelectorAll(".thumb-btn").forEach(b=>b.addEventListener("click",()=>{document.getElementById("main-shot").src=b.dataset.src;document.querySelectorAll(".thumb-btn").forEach(x=>x.classList.toggle("active",x===b));}));</script>
+    <div class="detail-grid">
+      <div>
+        <div class="block"><h2>Key findings</h2><ul class="findings"><li>26.5% of customers churned, taking $139K of $456K in monthly recurring revenue (30.5%).</li><li>Month-to-month contracts churn at 42.7% vs. 2.8% on two-year contracts.</li><li>First-year customers churn at 47.4% vs. 9.5% after four years.</li><li>High-risk profile (month-to-month + fiber + electronic check): 18.6% of customers, 60.4% churn, 49% of lost revenue.</li></ul></div>
+        <div class="block"><h2>Report pages</h2><ul class="pages"><li><b>Churn Overview</b><span>Churn rate, churned customers and lost monthly revenue; churn by tenure, contract, payment method, internet service and age group.</span></li><li><b>Services &amp; Pricing</b><span>Churn with vs. without each service, churn by monthly bill and by number of protection add-ons.</span></li><li><b>Revenue at Risk</b><span>Lost revenue by contract and internet segment, the high-risk customer profile and a segment scorecard.</span></li></ul></div>
+        
+      </div>
+      <aside>
+        <div class="block side"><h2>How it's built</h2><p>Customers table plus a Services table unpivoted in Power Query (one row per customer and service) with a bidirectional relationship, so churn can be compared for subscribers and non-subscribers of every service on one chart. 38 DAX measures, with groups above the average churn highlighted automatically.</p><div class="tools"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Unpivot modeling</span><span>Conditional formatting</span></div></div>
+        <div class="block side"><h2>Want one like this?</h2><p>I can build the same kind of report on your own data.</p><a class="btn" href="#contact">Get in touch</a></div>
+      </aside>
+    </div>
+    <a class="next" href="hr.html"><span>Next project</span><b>HR Attrition Analytics →</b></a>
+  </div>
+</main>
+<section class="contact" id="contact">
+  <div class="wrap contact-row">
+    <div>
+      <h2>Have data you're not using?</h2>
+      <p>Tell me about your business and the files you have. I reply within 24 hours with an honest view of what a dashboard could show you.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn" href="mailto:d8ta.solutions.ql@gmail.com?subject=Dashboard%20project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> d8ta.solutions.ql@gmail.com</a>
+      <div class="social"><a href="https://www.tiktok.com/@d8ta.solutions" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+  </div>
+</section>
+<footer class="foot"><div class="wrap foot-row"><span>© 2026 d8ta.solutions · Lima, Peru · Remote</span><span>Portfolio projects use public datasets.</span></div></footer>
+</body>
+</html>

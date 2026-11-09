@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR Attrition Analytics · d8ta.solutions</title>
+<meta name="description" content="Why employees leave, which roles and pay bands are most at risk, and what turnover costs the business.">
+<meta property="og:title" content="HR Attrition Analytics · d8ta.solutions">
+<meta property="og:description" content="Why employees leave, which roles and pay bands are most at risk, and what turnover costs the business.">
+<meta property="og:image" content="https://d8ta-solutions.github.io/assets/img/og.png">
+<link rel="icon" href="../assets/img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="../"><img src="../assets/img/logo-mark.png" alt=""><span class="bname">d8ta<span>.solutions</span></span></a>
+    <nav class="links">
+      <a href="../#about">About</a>
+      <a href="../#projects">Projects</a>
+      <a href="../#stories">Data stories</a>
+      <a class="btn btn-sm" href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="detail">
+  <div class="wrap">
+    <a class="back" href="../#projects">← All projects</a>
+    <div class="detail-head">
+      <div class="kicker">People analytics</div>
+      <h1>HR Attrition Analytics</h1>
+      <p class="sub">Why employees leave, which roles and pay bands are most at risk, and what turnover costs the business.</p>
+      <p class="data-line">IBM HR Analytics Employee Attrition · 1,470 employees</p>
+    </div>
+    <div class="detail-shot"><img id="main-shot" src="../assets/img/dash-hr-1.png" alt="HR Attrition Analytics dashboard"></div>
+    <div class="gallery"><button class="thumb-btn active" data-src="../assets/img/dash-hr-1.png"><img src="../assets/img/dash-hr-1.png" alt="" loading="lazy"><span>Workforce Overview</span></button><button class="thumb-btn" data-src="../assets/img/dash-hr-2.png"><img src="../assets/img/dash-hr-2.png" alt="" loading="lazy"><span>Attrition Drivers</span></button><button class="thumb-btn" data-src="../assets/img/dash-hr-3.png"><img src="../assets/img/dash-hr-3.png" alt="" loading="lazy"><span>Compensation &amp; Career</span></button></div>
+    <script>document.querySelectorAll(".thumb-btn").forEach(b=>b.addEventListener("click",()=>{document.getElementById("main-shot").src=b.dataset.src;document.querySelectorAll(".thumb-btn").forEach(x=>x.classList.toggle("active",x===b));}));</script>
+    <div class="detail-grid">
+      <div>
+        <div class="block"><h2>Key findings</h2><ul class="findings"><li>Overall attrition is 16.1%; Sales Representatives reach 39.8% (2.5×).</li><li>Employees working overtime leave at 30.5%, 2.9× the rate of those who don&#x27;t.</li><li>43% of leavers had 2 years of tenure or less.</li><li>Leavers earned 30% less per month than employees who stayed; estimated replacement cost is $6.8M.</li></ul></div>
+        <div class="block"><h2>Report pages</h2><ul class="pages"><li><b>Workforce Overview</b><span>Headcount, leavers, attrition rate, age, pay and tenure; attrition by job role, age, department and marital status.</span></li><li><b>Attrition Drivers</b><span>Overtime, tenure, job satisfaction and business travel.</span></li><li><b>Compensation &amp; Career</b><span>Attrition by pay band, pay of leavers vs. stayers by job level and a retention scorecard by role.</span></li></ul></div>
+        
+      </div>
+      <aside>
+        <div class="block side"><h2>How it's built</h2><p>Single employee table shaped in Power Query: constant columns removed, 1–4 survey scores mapped to labels, and age, tenure and income bands with sort orders. 39 DAX measures, including a selection-aware benchmark that drives the conditional colors and dynamic subtitles.</p><div class="tools"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Banding</span><span>Dynamic subtitles</span></div></div>
+        <div class="block side"><h2>Want one like this?</h2><p>I can build the same kind of report on your own data.</p><a class="btn" href="#contact">Get in touch</a></div>
+      </aside>
+    </div>
+    <a class="next" href="airline.html"><span>Next project</span><b>Airline Passenger Experience →</b></a>
+  </div>
+</main>
+<section class="contact" id="contact">
+  <div class="wrap contact-row">
+    <div>
+      <h2>Have data you're not using?</h2>
+      <p>Tell me about your business and the files you have. I reply within 24 hours with an honest view of what a dashboard could show you.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn" href="mailto:d8ta.solutions.ql@gmail.com?subject=Dashboard%20project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> d8ta.solutions.ql@gmail.com</a>
+      <div class="social"><a href="https://www.tiktok.com/@d8ta.solutions" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+  </div>
+</section>
+<footer class="foot"><div class="wrap foot-row"><span>© 2026 d8ta.solutions · Lima, Peru · Remote</span><span>Portfolio projects use public datasets.</span></div></footer>
+</body>
+</html>
